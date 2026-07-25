@@ -1,0 +1,132 @@
+/* Global page styles */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 40px;
+  background-color: #fafafa;
+  color: #333;
+  max-width: 900px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+#scene-header p {
+  margin: 0 0 16px;
+  max-width: 65ch;
+}
+
+/* Buttons */
+#controls {
+  margin-bottom: 16px;
+}
+
+button {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 0 4px 4px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #005b99;
+}
+button.active {
+  background: #003f66;
+}
+
+/* Chart container, just for tooltip positioning */
+#chart-container {
+  position: relative;
+}
+
+svg#chart {
+  display: block;
+  width: 100%;
+  height: 460px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+#hover-hint {
+  font-size: 0.85em;
+  color: #666;
+}
+
+#tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #333;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  line-height: 1.35;
+  transform: translate(-50%, -115%);
+  white-space: nowrap;
+}
+
+#tooltip.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Axes */
+.axis text {
+  fill: #666;
+  font-size: 0.72em;
+}
+.axis path,
+.axis line {
+  stroke: #ccc;
+}
+.axis-label {
+  fill: #666;
+  font-size: 0.74em;
+}
+
+/* Lines and points */
+.series-line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.series-hover-dot {
+  fill: white;
+  stroke-width: 2px;
+}
+
+.event-band rect {
+  fill: #eee;
+}
+.event-band text {
+  fill: #666;
+  font-size: 0.72em;
+}
+
+/* Annotation text (d3-annotation) */
+.annotation-note-bg {
+  fill: #333 !important;
+  fill-opacity: 1 !important;
+}
+.annotation-note-title,
+.annotation-note-label {
+  fill: white !important;
+}
+.annotation-connector path,
+.annotation-connector line {
+  stroke: #333;
+}
+.annotation-subject circle {
+  fill: none;
+}
+
+footer#scene-footer {
+  margin-top: 16px;
+  color: #666;
+  font-size: 0.8em;
+}

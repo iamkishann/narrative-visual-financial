@@ -4,7 +4,7 @@ const SCENE_COPY = {
   overview: {
     title: "The Dot-Com Decade: Five Tech Giants, Five Different Fortunes",
     message:
-      "Apple, Amazon, Google, IBM and Microsoft all lived through the same dot-com crash and the same 2008 financial crisis. What happened to each stock afterward had almost nothing to do with the macro backdrop and everything to do with company-specific bets. Pick a company below to see its story.",
+      "Apple, Amazon, Google, IBM and Microsoft all lived through the same dot-com crash and the same 2008 financial crisis. What happened to each stock afterward had almost nothing to do with the macro backdrop and everything to do with company-specific bets. This is a drill-down story: pick any company below, in any order, to explore its own story.",
   },
   AAPL: {
     title: "Apple: Written Off, Then the Decade's Biggest Winner",
